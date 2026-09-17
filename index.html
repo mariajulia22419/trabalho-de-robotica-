@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Calmo - Seu Refúgio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🌿 Espaço Calmo 🍓</h1>
+        <p>Um lugar seguro para respirar, relaxar e se divertir no seu próprio tempo.</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- SEÇÃO CELESTE: Respiração da Pena -->
+        <section class="card-section" id="celeste-section">
+            <h2>🪶 A Pena de Celeste (Respiração Guiada)</h2>
+            <p>Inspire e expire acompanhando o movimento do círculo para acalmar a mente.</p>
+            
+            <div class="breathing-container">
+                <div class="circle-outer">
+                    <div class="circle-inner" id="breathing-circle">
+                        <span id="breathing-text">Clique em Iniciar</span>
+                    </div>
+                </div>
+                <button id="btn-breath" onclick="toggleBreathing()">Iniciar Respiração</button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO STARDEW VALLEY: Jogo de Memória da Fazenda -->
+        <section class="card-section" id="stardew-section">
+            <h2>👨‍🌾 Memória da Fazendinha (Inspirado em Stardew)</h2>
+            <p>Encontre os pares de colheitas da fazenda. Não há tempo, jogue no seu ritmo!</p>
+
+            <div class="memory-board" id="memory-board">
+                <!-- As cartas serão geradas via JavaScript -->
+            </div>
+            <button class="btn-restart" onclick="initMemoryGame()">Reiniciar Jogo</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Lembre-se: Você está seguro e indo no seu próprio tempo. 💙</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
