@@ -1,0 +1,146 @@
+/* Configurações Gerais e Cores Pastéis Calmas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #eef5f3;
+    color: #4a5568;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #c8e6c9;
+    width: 100%;
+    border-bottom: 3px solid #a5d6a7;
+}
+
+header h1 {
+    font-family: 'Fredoka', sans-serif;
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #43a047;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card-section {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.card-section h2 {
+    font-family: 'Fredoka', sans-serif;
+    color: #37474f;
+    margin-bottom: 10px;
+}
+
+/* CELESTE: Área de Respiração */
+.breathing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.circle-outer {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circle-inner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #80deea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #006064;
+    font-weight: bold;
+    transition: transform 4s ease-in-out;
+}
+
+/* Animações ativadas pelo JS */
+.grow {
+    transform: scale(1.6);
+}
+
+button {
+    background-color: #81c784;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #66bb6a;
+}
+
+/* STARDEW: Jogo da Memória */
+.memory-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.card {
+    height: 80px;
+    background-color: #ffe0b2;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.card.flipped {
+    background-color: #fff3e0;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    color: #78909c;
+    font-size: 0.9rem;
+}
